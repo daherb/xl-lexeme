@@ -24,7 +24,7 @@ from typing import Any, Callable, Iterable, Iterator, Literal, overload, Union, 
 from sentence_transformers import __MODEL_HUB_ORGANIZATION__
 from sentence_transformers.evaluation import SentenceEvaluator
 from sentence_transformers.model_card import SentenceTransformerModelCardData, generate_model_card
-from sentence_transformers.util import import_from_string, batch_to_device, fullname, snapshot_download
+from sentence_transformers.util import import_from_string, batch_to_device, fullname
 from sentence_transformers.models import Transformer, Pooling, Dense
 from sentence_transformers.model_card_templates import ModelCardTemplate
 from sentence_transformers import __version__
