@@ -11,7 +11,7 @@ import transformers
 from huggingface_hub import HfApi, HfFolder, Repository, hf_hub_url
 import torch
 from torch import nn, Tensor, device
-from torch.optim import Optimizer
+from torch.optim import Optimizer, AdamW
 from torch.utils.data import DataLoader
 import torch.multiprocessing as mp
 from tqdm.autonotebook import trange
@@ -811,7 +811,7 @@ class WordTransformer(nn.Sequential):
             steps_per_epoch = None,
             scheduler: str = 'WarmupLinear',
             warmup_steps: int = 10000,
-            optimizer_class: Type[Optimizer] = transformers.AdamW,
+            optimizer_class: Type[Optimizer] = AdamW,
             optimizer_params : Dict[str, object]= {'lr': 2e-5},
             weight_decay: float = 0.01,
             evaluation_steps: int = 0,
