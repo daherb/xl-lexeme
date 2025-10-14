@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=61.2"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "WordTransformer"
+version = "0.0.1"
+authors = [{name = "Pierluigi Cassotti"}]
+description = "WiC Pretrained Model for Cross-Lingual LEXical sEMantic changE"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+urls = {Homepage = "https://github.com/pierluigic/xl-lexeme"}
+requires-python = ">=3.8"
+dependencies = ["sentence-transformers"]
+
+[project.readme]
+file = "setup.cfg"
+content-type = "text/markdown"
+
+[tool.setuptools]
+platforms = ["all"]
+include-package-data = false
+
+[tool.setuptools.packages]
+find = {namespaces = false}
