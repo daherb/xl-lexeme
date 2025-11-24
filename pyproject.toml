@@ -14,7 +14,10 @@ classifiers = [
 ]
 urls = {Homepage = "https://github.com/pierluigic/xl-lexeme"}
 requires-python = ">=3.8"
-dependencies = ["sentence-transformers"]
+dependencies = [
+	     "sentence-transformers",
+	     "peft==0.17.1"
+]
 
 [project.readme]
 file = "setup.cfg"
